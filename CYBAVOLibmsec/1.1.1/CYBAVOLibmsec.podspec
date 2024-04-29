@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CYBAVOLibmsec"
-  s.version      = '1.1.0'
+  s.version      = '1.1.1'
   s.summary      = "CYBAVO mobile security lib for iOS."
   s.description  = <<-DESC
 Use CYBAVO mobile security lib easily develop app with security check.
@@ -15,5 +15,6 @@ Use CYBAVO mobile security lib easily develop app with security check.
   s.source_files  = "**/*.{h}"
   s.swift_versions = ['5']
   s.ios.vendored_frameworks = 'CYBAVOLibmsec.xcframework'
-  s.resources = ['Libmsec.plist', 'PrivacyInfo.xcprivacy']
+  s.resources = ['Libmsec.plist']
+  s.resource_bundles = {'CYBAVOLibmsec' => ['PrivacyInfo.xcprivacy']}
 end
