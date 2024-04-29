@@ -15,5 +15,6 @@ Use CYBAVO mobile security lib easily develop app with security check.
   s.source_files  = "**/*.{h}"
   s.swift_versions = ['5']
   s.ios.vendored_frameworks = 'CYBAVOLibmsec.xcframework'
-  s.resources = ['Libmsec.plist', 'PrivacyInfo.xcprivacy']
+  s.resources = ['Libmsec.plist']
+  s.resource_bundles = {'CYBAVOLibmsec' => ['PrivacyInfo.xcprivacy']}
 end
